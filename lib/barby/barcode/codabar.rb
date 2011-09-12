@@ -54,5 +54,10 @@ module Barby
     def stop_encoding
       STOP
     end
+
+    # This is likely not universal, just adding for interface parity.
+    def valid?
+      data.length == 14
+    end
   end
 end
